@@ -1,0 +1,120 @@
+*{
+  margin: 0px;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+h1{
+  text-align: center;
+}
+.container{
+  margin: 1rem 2rem;
+  max-width: 500px;
+  background-color: lightgray;
+  box-shadow: 0px 0px 5px 0px;
+  padding: 2rem 2rem;
+  position: relative;
+}
+.from-container{
+  border-radius: 5px;
+  background-color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+.from-container::after{
+  content: "SWAP";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem 1rem;
+  width: 50px;
+  height: 40px;
+  background-color: blue;
+  box-shadow: 0px 0px 8px 0px;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+}
+.from-container input{
+  width: 30%;
+  border: none;
+  outline: none;
+  background-color: lightgray;
+  border-radius: 5px;
+  padding: 0.3rem 0.4rem;
+}
+label{
+  color: gray;
+  font-weight: 700;
+}
+.currency-type{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0.6rem;
+}
+.currency-type select{
+  padding: 0.3rem 0.4rem;
+  border-radius: 5px;
+  border: none;
+  background-color: lightgray;
+  outline: none;
+}
+.from-input{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.6rem;
+}
+.to-input{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.6rem;
+}
+.to-container{
+  margin-top: 2rem;
+  border-radius: 5px;
+  background-color: #fff;
+  padding:1rem 2rem ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.to-container input{
+  width: 30%;
+  border: none;
+  outline: none;
+  background-color: lightgray;
+  border-radius: 5px;
+  padding: 0.3rem 0.4rem;
+}
+
+.container button{
+  width: 100%;
+  padding: 1rem;
+  margin-top: 2rem;
+  background-color: blue;
+  color: white;
+  border: 1px  solid blue;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+.container button:hover{
+  background-color: #fff;
+  color: black;
+  border: 1px solid black;
+}
